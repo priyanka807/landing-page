@@ -18,7 +18,7 @@ const images =  ["/laptop.jpg" ,  "/gatwick_bg.jpg" ,  "/london_city_bg.jpg" ,"/
 
   useEffect(() => {
     let token =
-      "af3c2d2842b5cc04db363e07eee586c8eda32b6554dc0814da1be224965a5d8dfda50ca26618e582a68d51f04310b00482dc8c24df8a8f104128059fb1e8e40ad12d1cd13dce6c581884e8eddc2b1ba0b54b683adecef45d89f5385326212aec9e691d8d31048d29580e1338a9f22371f9b88030fedcca5a90ed021c0ec5d640";
+      "0dccc54733b7f741dc4f9a41e8e43d355e357dbe74fe72375201d298190e434b17b72e06fb30c48916ae38199d7c5acc9f3a06557d5331d84393d9e4c609876dc8dd35f7682148c237e13a16f0bf9a7825a48fcd04543eb76dbd8d64166f7b1994e3d708466b40416f3ff7948b3b7e29e82ea1bc09fa2b592d95e5a5aacebeda";
     const config = {
       headers: { Authorization: `Bearer ${token}` },
     };
@@ -26,7 +26,7 @@ const images =  ["/laptop.jpg" ,  "/gatwick_bg.jpg" ,  "/london_city_bg.jpg" ,"/
 
     axios
       .get(
-        "http://localhost:1337/api/blogposts?populate=*",
+        "https://my-strapi-project-8vpv.onrender.com/api/blogposts?populate=*",
         config
       )
       .then((res) => {
@@ -71,6 +71,7 @@ const images =  ["/laptop.jpg" ,  "/gatwick_bg.jpg" ,  "/london_city_bg.jpg" ,"/
 
   return (
     <>
+    
       <div className="whychoose_container">
         <div className="black_section"></div>
         <div className="whychoose_section">
