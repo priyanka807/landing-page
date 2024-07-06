@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
   const [image, setimage] = useState(state?.attributes?.images);
 
   const [title, setTitle] = useState("Industry Experts");
-const images =  ["/laptop.jpg" ,  "/gatwick_bg.jpg" ,  "/london_city_bg.jpg" ,"/about_banner.jpg","/laptop.jpg"]  
+// const images =  ["/laptop.jpg" ,  "/gatwick_bg.jpg" ,  "/london_city_bg.jpg" ,"/about_banner.jpg","/laptop.jpg"]  
 
 
   const [buttons, setButtons] = useState(null);
@@ -91,20 +91,20 @@ const images =  ["/laptop.jpg" ,  "/gatwick_bg.jpg" ,  "/london_city_bg.jpg" ,"/
               </div>
 
 <div className="second_image">
-{/* <Image
+<Image
                     className="image"
                     width={"450"}
                     height={"450"}
                     src={image}
                     alt="image"
-                  /> */}
-                  <Image
+                  />
+                  {/* <Image
                     className="image"
                     width={"450"}
                     height={"450"}
                     src={images[activeItems]}
                     alt="image"
-                  />
+                  /> */}
 </div>
              
 
