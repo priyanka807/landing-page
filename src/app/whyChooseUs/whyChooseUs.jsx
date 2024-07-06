@@ -102,7 +102,7 @@ const images =  ["/laptop.jpg" ,  "/gatwick_bg.jpg" ,  "/london_city_bg.jpg" ,"/
                     className="image"
                     width={"450"}
                     height={"450"}
-                    src={image[activeItems]}
+                    src={images[activeItems]}
                     alt="image"
                   />
 </div>
