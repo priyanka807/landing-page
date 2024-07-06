@@ -91,11 +91,18 @@ const images =  ["/laptop.jpg" ,  "/gatwick_bg.jpg" ,  "/london_city_bg.jpg" ,"/
               </div>
 
 <div className="second_image">
-<Image
+{/* <Image
                     className="image"
                     width={"450"}
                     height={"450"}
                     src={image}
+                    alt="image"
+                  /> */}
+                  <Image
+                    className="image"
+                    width={"450"}
+                    height={"450"}
+                    src={image[activeItems]}
                     alt="image"
                   />
 </div>
